@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/bedge-grunge.png');
+    background-size: cover; /* Para cobrir todo o espaço do elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    /* Outros estilos opcionais */
+    font-size: 4vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    max-width: 100%;
+    height: auto;
+}
+
+#start{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.start-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-image{
+    max-width: 80%;
+}
+
+.start-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.start-texts>h1{
+    padding-bottom: 5%;
+    font-family: "Raleway", sans-serif;
+    font-size: 6vw;
+    font-weight: 500;
+    color: #bca682;
+}
+
+h1>strong{
+    font-weight: 700;
+}
+
+.start-texts>p{
+    padding-bottom: 5%;
+    font-family: "Lora",serif;
+    color: #282728;
+}
+
+.instagram-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    padding: 1em 3em;
+    font-family: "Raleway", sans-serif;
+    font-size: 4vw;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #bca682;
+    color: #f0efe7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-linkedin:hover {
+    background-color: #005f91;
+}
+
