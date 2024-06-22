@@ -53,23 +53,19 @@ header {
 
 .start-texts>h1{
     padding-bottom: 5%;
-    font-family: "Raleway", sans-serif;
-    font-size: 8vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10vw;
     font-weight: 500;
     color: #bca682;
 }
 
-#my-name{
-    font-weight: 700;
-}
-
 #my-profession{
-    font-size: 7vw;
+    font-size: 9vw;
     font-weight: 500;
 }
 
 .start-texts>p{
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     font-family: "Lora",serif;
     color: #282728;
 }
@@ -83,7 +79,7 @@ header {
     padding: 1em 3em;
     font-family: "Raleway", sans-serif;
     font-size: 4vw;
-    font-weight: 700;
+    font-weight: 300;
     text-decoration: none;
     background-color: #bca682;
     color: #f0efe7;
@@ -104,8 +100,8 @@ header {
 }
 
 .section-title{
-    font-family: "Raleway", sans-serif;
-    font-size: 6vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 9vw;
     font-weight: 500;
     text-align: center;
     color: #bca682;
@@ -117,6 +113,5 @@ header {
     align-items: center;
     padding: 5% 10%;
     font-family: "Lora", serif;
-    font-style: italic;
     text-align: center;
 }
