@@ -40,7 +40,7 @@ header {
 }
 
 .start-image{
-    max-width: 80%;
+    max-width: 70%;
 }
 
 .start-texts{
@@ -70,21 +70,46 @@ header {
     color: #282728;
 }
 
-.instagram-button {
+.instagram-button,.linkedin-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0 10px;
     padding: 1em 3em;
-    font-family: "Raleway", sans-serif;
-    font-size: 4vw;
-    font-weight: 300;
+    width: 60vw;
     text-decoration: none;
-    background-color: #bca682;
+    background: #bca682;
+    background: -webkit-linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
+    background: linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
     color: #f0efe7;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.instagram-button,.linkedin-button,.github-button>p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.github-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-top: 20px;
+    padding: 1em 3em;
+    width: 60vw;
+    text-decoration: none;
+    background: #bca682;
+    background: -webkit-linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
+    background: linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
+    color: #f0efe7;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -93,18 +118,17 @@ header {
     background-color: #005f91;
 }
 
+.triangles-decoration { width: 100%;
+    height: 55px;
+    background-image: repeating-conic-gradient(from 30deg, #bca682 0% 60deg, rgba(252, 252, 252, 0) 0% 120deg);
+background-size: 32px 55px;
+background-color: rgba(252, 252, 252, 0);
+}
+
 #about-me{
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
-}
-
-.section-title{
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 9vw;
-    font-weight: 500;
-    text-align: center;
-    color: #bca682;
 }
 
 .about-me-texts{
@@ -114,4 +138,20 @@ header {
     padding: 5% 8%;
     font-family: "Lora", serif;
     text-align: center;
+}
+
+.section-title{
+    padding-top: 50px;
+    padding-bottom: 8%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 9vw;
+    font-weight: 500;
+    text-align: center;
+    color: #bca682;
+}
+
+.about-me-texts>p{
+    padding-bottom: 8%;
+    font-family: "Lora",serif;
+    color: #282728;
 }
