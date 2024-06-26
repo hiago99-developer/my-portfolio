@@ -28,8 +28,8 @@ header {
 #start{
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
-    padding-top: 50px;
+    gap: 20px;
+    padding: 50px 0 40px 0;
 }
 
 .start-images{
@@ -47,41 +47,39 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4vh;
     padding: 5% 10%;
     text-align: center;
 }
 
 .start-texts>h1{
-    padding-bottom: 5%;
     font-family: "Bebas Neue", sans-serif;
     font-size: 10vw;
     font-weight: 500;
-    color: #bca682;
+    line-height: 70%;
+    color: #282728;
 }
 
 #my-profession{
-    font-size: 9vw;
+    font-size: 7vw;
     font-weight: 500;
 }
 
 .start-texts>p{
-    padding-bottom: 8%;
-    font-family: "Lora",serif;
+    font-family: "Roboto", sans-serif;
     color: #282728;
 }
 
-.instagram-button,.linkedin-button {
+.instagram-button,.linkedin-button,.github-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0 10px;
     padding: 1em 3em;
+    height: 6vh;
     width: 60vw;
     text-decoration: none;
-    background: #bca682;
-    background: -webkit-linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
-    background: linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
+    background: #282728;
     color: #f0efe7;
     border: none;
     border-radius: 8px;
@@ -89,69 +87,54 @@ header {
     transition: background-color 0.3s ease;
 }
 .instagram-button,.linkedin-button,.github-button>p{
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 100%;
-    font-weight: 300;
-}
-
-.github-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0 10px;
-    margin-top: 20px;
-    padding: 1em 3em;
-    width: 60vw;
-    text-decoration: none;
-    background: #bca682;
-    background: -webkit-linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
-    background: linear-gradient(232deg, #bca682 0%, rgba(189, 166, 130, 0.61) 100%);
-    color: #f0efe7;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
 }
 
 .botao-linkedin:hover {
     background-color: #005f91;
 }
 
+
 .triangles-decoration { width: 100%;
     height: 55px;
-    background-image: repeating-conic-gradient(from 30deg, #bca682 0% 60deg, rgba(252, 252, 252, 0) 0% 120deg);
+    background-image: repeating-conic-gradient(from 30deg, #282728 0% 60deg, rgba(245, 245, 245, 0) 0% 120deg);
 background-size: 32px 55px;
-background-color: rgba(252, 252, 252, 0);
+background-color: rgba(245, 245, 245, 0);   
 }
 
 #about-me{
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    gap: 20px;
+    padding: 40px 0;
+    background: radial-gradient(circle, transparent 20%, rgba(245, 245, 245, 0) 20%, rgba(245, 245, 245, 0) 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, rgba(245, 245, 245, 0) 20%, rgba(245, 245, 245, 0) 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(rgba(41, 40, 41, 0.03) 2px, transparent 2px) 0px -1px / 32px 32px, linear-gradient(90deg, rgba(41, 40, 41, 0.03) 2px, rgba(245, 245, 245, 0) 2px) -1px 0px / 32px 32px rgba(245, 245, 245, 0);
+background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+background-color: rgba(245, 245, 245, 0);
 }
 
 .about-me-texts{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4vh;
     padding: 5% 8%;
-    font-family: "Lora", serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
 }
 
 .section-title{
-    padding-top: 50px;
-    padding-bottom: 8%;
     font-family: "Bebas Neue", sans-serif;
     font-size: 9vw;
     font-weight: 500;
     text-align: center;
-    color: #bca682;
+    color: #282728;
 }
 
 .about-me-texts>p{
-    padding-bottom: 8%;
-    font-family: "Lora",serif;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
     color: #282728;
 }
+
