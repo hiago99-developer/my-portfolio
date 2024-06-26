@@ -82,7 +82,7 @@ header {
     background: #282728;
     color: #f0efe7;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -109,9 +109,9 @@ background-color: rgba(245, 245, 245, 0);
     flex-direction: column;
     gap: 20px;
     padding: 40px 0;
-    background: radial-gradient(circle, transparent 20%, rgba(245, 245, 245, 0) 20%, rgba(245, 245, 245, 0) 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, rgba(245, 245, 245, 0) 20%, rgba(245, 245, 245, 0) 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(rgba(41, 40, 41, 0.03) 2px, transparent 2px) 0px -1px / 32px 32px, linear-gradient(90deg, rgba(41, 40, 41, 0.03) 2px, rgba(245, 245, 245, 0) 2px) -1px 0px / 32px 32px rgba(245, 245, 245, 0);
-background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
-background-color: rgba(245, 245, 245, 0);
+    background-image: linear-gradient(rgba(41, 40, 41, 0.06) 1px, transparent 1px), linear-gradient(to right, rgba(41, 40, 41, 0.06) 1px, transparent 1px);
+background-size: 32px 32px;
+background-color: rgba(255, 255, 255, 0);
 }
 
 .about-me-texts{
@@ -138,3 +138,9 @@ background-color: rgba(245, 245, 245, 0);
     color: #282728;
 }
 
+#projects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+}
