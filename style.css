@@ -5,7 +5,6 @@
 }
 
 body{
-    background-color: #f0efe7;
     background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
     font-size: 4vw;
 }
@@ -29,7 +28,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 0 40px 0;
+    padding:40px 0;
 }
 
 .start-images{
@@ -54,14 +53,14 @@ header {
 
 .start-texts>h1{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 10vw;
+    font-size: 12vw;
     font-weight: 500;
     line-height: 70%;
     color: #282728;
 }
 
 #my-profession{
-    font-size: 7vw;
+    font-size: 9vw;
     font-weight: 500;
 }
 
@@ -77,12 +76,12 @@ header {
     align-items: center;
     padding: 1em 3em;
     height: 6vh;
-    width: 60vw;
+    width: 70vw;
     text-decoration: none;
     background: #282728;
     color: #f0efe7;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -144,3 +143,66 @@ background-color: rgba(255, 255, 255, 0);
     gap: 20px;
     padding: 40px 0;
 }
+
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 25vh;
+    width: 40vw;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ .card>p{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5em;
+ }
+
+.spinner {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    color: #000000;
+    background: radial-gradient(farthest-side, currentColor calc(100% - 4.8px),#0000 calc(100% - 4px) 0);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 10.4px),#000 calc(100% - 9.6px));
+    border-radius: 50%;
+    animation: spinner-sm4bhi 2.8s infinite linear;
+ }
+ 
+ .spinner::before,
+ .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    background: linear-gradient(currentColor 0 0) center,
+           linear-gradient(currentColor 0 0) center;
+    background-size: 100% 8px,8px 100%;
+    background-repeat: no-repeat;
+ }
+ 
+ .spinner::after {
+    transform: rotate(45deg);
+ }
+ 
+ @keyframes spinner-sm4bhi {
+    100% {
+       transform: rotate(1turn);
+    }
+ }
+
