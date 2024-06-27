@@ -81,7 +81,7 @@ header {
     background: #282728;
     color: #f0efe7;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -129,7 +129,20 @@ background-color: rgba(255, 255, 255, 0);
     font-weight: 500;
     text-align: center;
     color: #282728;
+    position: relative;
+    display: inline-block; /* ou use block para linha completa */
+    font-size: 24px; /* ajuste conforme necessário */
+    margin-bottom: 20px; /* espaço abaixo do h2 */
 }
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50%; /* largura da linha */
+    height: 2px; /* altura da linha */
+    background-color: #000; /* cor da linha */
+    margin: 5px auto 0; /* espaço acima da linha */
+  }
 
 .about-me-texts>p{
     font-family: "Roboto", sans-serif;
@@ -142,6 +155,16 @@ background-color: rgba(255, 255, 255, 0);
     flex-direction: column;
     gap: 20px;
     padding: 40px 0;
+}
+
+.projects-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    padding: 5% 8%;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 
 .boxes{
@@ -164,14 +187,15 @@ background-color: rgba(255, 255, 255, 0);
     height: 25vh;
     width: 40vw;
     padding: 20px;
+    background-color: #f0efe7;
     border: 1px solid #000000;
-    border-radius: 10px;
+    border-radius: 3px;
     text-align: center;
     font-size: 1.5em;
  }
 
  .card>p{
-    font-family: "Roboto", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 0.5em;
  }
 
