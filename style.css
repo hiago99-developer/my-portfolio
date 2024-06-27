@@ -10,24 +10,35 @@ body{
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 13vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #282728;
+    border-bottom: 1px solid black;
 }
 
-.logo-header {
-    max-width: 100%;
+#menu-icon-header {
+    max-width: 9vw;
     height: auto;
+}
+
+#logo-header{
+    max-width: 35vw;
 }
 
 #start{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 85px;
     padding:40px 0;
 }
 
@@ -156,6 +167,10 @@ background-color: rgba(255, 255, 255, 0);
     padding: 40px 0;
 }
 
+.featured-excerpt{
+    font-weight: 500;
+}
+
 .projects-texts, .tools-texts, .contacts-texts{
     display: flex;
     flex-direction: column;
@@ -263,10 +278,11 @@ background-color: rgba(255, 255, 255, 0);
 }
 
 .contacts-icon{
-    max-width: 10vw;
+    max-width: 12vw;
 }
 
 .footer-texts{
+    border-top: 1px solid black;
     padding: 8%;
     font-family: "Roboto", sans-serif;
     text-align: center;
