@@ -124,15 +124,14 @@ background-color: rgba(255, 255, 255, 0);
 }
 
 .section-title{
+    display: inline-block; /* ou use block para linha completa */
+    margin-bottom: 20px; /* espaço abaixo do h2 */
     font-family: "Bebas Neue", sans-serif;
     font-size: 9vw;
     font-weight: 500;
     text-align: center;
     color: #282728;
     position: relative;
-    display: inline-block; /* ou use block para linha completa */
-    font-size: 24px; /* ajuste conforme necessário */
-    margin-bottom: 20px; /* espaço abaixo do h2 */
 }
 
 .section-title::after {
@@ -150,14 +149,14 @@ background-color: rgba(255, 255, 255, 0);
     color: #282728;
 }
 
-#projects{
+#projects, #tools, #contacts{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 40px 0;
 }
 
-.projects-texts{
+.projects-texts, .tools-texts, .contacts-texts{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,3 +229,45 @@ background-color: rgba(255, 255, 255, 0);
     }
  }
 
+.tools-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tools-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 4%;
+    background-color: #f0efe7;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.tools-card>p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3em;
+}
+
+.tools-icons{
+    max-width: 10vw;
+}
+
+.contacts-boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contacts-icon{
+    max-width: 10vw;
+}
+
+.footer-texts{
+    padding: 8%;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
